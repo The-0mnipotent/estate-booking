@@ -9,6 +9,7 @@ function SignUp() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    console.log(loading);
     setLoading(true);
     const res = await fetch("/api/auth/sign-up", {
       method: "POST",
