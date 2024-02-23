@@ -41,7 +41,7 @@ export const signIn = async (req, res, next) => {
       })
       .json({
         success: true,
-        user: { username: validUser.username, email: validUser.email },
+        user: validUser,
       });
   } catch (error) {
     next(error);
